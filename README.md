@@ -1,6 +1,6 @@
-# OpenNebula Deployment on Ubuntu using VMware Station Exported .ovf Image
+# OpenNebula Deployment on Ubuntu 
 
-This project provides instructions on deploying OpenNebula on an Ubuntu server using a .ovf image exported from VMware Station. OpenNebula is a robust open-source cloud management platform that enables you to create and manage your private cloud infrastructure.
+This project provides instructions on deploying OpenNebula on an Ubuntu server using an image. OpenNebula is a robust open-source cloud management platform that enables you to create and manage your private cloud infrastructure.
 
 ## Prerequisites
 
