@@ -6,21 +6,47 @@ This project provides instructions on deploying OpenNebula on an Ubuntu server u
 
 Before you begin, make sure you have the following prerequisites in place:
 
-- A VMware Station exported .ovf image of OpenNebula.
+- VMware Workstation Pro or Oracle VM VirtualBox for importing the available image.
 
 ## Installation Steps
 
-Follow these steps to set up OpenNebula on your Ubuntu server:
+Follow these steps to set up an Ubuntu image which is installed OpenNebula:
 
-### Step 1: Deploy Ubuntu Server
+### Step 1: Clone this repository
 
-Ensure you have an Ubuntu server with the appropriate version installed. If not, install and update it.
+Clone this repository by using "git clone"
 
-### Step 2: Install Required Packages
+### Step 2: Import the image
 
-Update your package list and install necessary packages:
+Import the OpenNebula.ovf file (image) into VMware Workstation Pro or Oracle VM VirtualBox
+
+### Step 3: Update packages and using the cloud
 
 ```bash
-sudo apt update
-sudo apt upgrade
-sudo apt install git qemu-kvm libvirt-bin libvirt-dev ruby rake make gcc libmysqlclient-dev libxml2 libxml2-dev build-essential libxslt1-dev ruby-dev libsqlite3-dev libcurl4-gnutls-dev default-jdk
+sudo apt-get update
+```
+
+## Using Instructions
+
+OpenNebula allows to access a web-based interface to create Virtual Machines from available images.
+
+### Access the Front-end web (OpenNebula-Sunstone)
+
+We can access to the Sunstone web with the URL: 
+
+```bash
+[IP Address of the VM’s network]:9869
+```
+
+![Alt text](images\frontend.png)
+
+In order to login, we open terminal and run the following commands:
+
+```bash
+su oneadmin 
+cat ~/.one/one_auth 
+```
+
+This will show the password for loginning and the username is "oneadmin"
+
+So, the Sunstone web allows to create VMs. 
