@@ -38,7 +38,7 @@ We can access to the Sunstone web with the URL:
 [IP Address of the VM’s network]:9869
 ```
 
-![Alt text](images\frontend.png)
+![Alt text](images/frontend.png)
 
 In order to login, we open terminal and run the following commands:
 
